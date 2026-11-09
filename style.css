@@ -141,3 +141,10 @@ h1{grid-area:title}
 .ct .nm small{overflow-wrap:anywhere}
 .ci{flex:none;width:3.2rem;height:3.2rem;border-radius:22%;background:url(assets/images/kontak.png) no-repeat;background-size:300% 200%;background-position:calc(var(--x)*50%) calc(var(--y)*100%);box-shadow:0 0 0 1px #2a2a2a}
 @media(min-width:760px){.ctg{grid-template-columns:repeat(3,1fr)}}
+
+/* pilihan bahasa */
+.langs{margin-left:auto;display:flex;gap:.3rem}
+.langs button{all:unset;cursor:pointer;padding:.25rem .65rem;border:1px solid var(--line);border-radius:999px;font-size:.76rem;letter-spacing:.1em;color:var(--muted);transition:background .2s,color .2s}
+.langs button:hover{color:#fff}
+.langs button.on{background:var(--red);border-color:var(--red);color:#fff}
+.langs button:focus-visible{outline:2px solid var(--red);outline-offset:2px}
