@@ -131,3 +131,13 @@ h1{grid-area:title}
 .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .vopen{display:inline-block;margin:.7rem .4rem .3rem;color:var(--muted);font-size:.88rem}
 .vopen:hover{color:#fff}
+
+/* kontak */
+.ctg{display:grid;gap:.7rem;margin:.8rem 0 0}
+#kontak h3{margin-top:1.8rem}
+.ct{display:flex;align-items:center;gap:.9rem;padding:.8rem 1rem;border:1px solid var(--line);border-radius:1rem;background:var(--panel);text-decoration:none;transition:border-color .2s,transform .2s}
+.ct:hover{border-color:var(--red);transform:translateY(-2px)}
+.ct .nm{min-width:0}
+.ct .nm small{overflow-wrap:anywhere}
+.ci{flex:none;width:3.2rem;height:3.2rem;border-radius:22%;background:url(assets/images/kontak.png) no-repeat;background-size:300% 200%;background-position:calc(var(--x)*50%) calc(var(--y)*100%);box-shadow:0 0 0 1px #2a2a2a}
+@media(min-width:760px){.ctg{grid-template-columns:repeat(3,1fr)}}
