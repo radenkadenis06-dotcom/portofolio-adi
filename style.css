@@ -148,3 +148,19 @@ h1{grid-area:title}
 .langs button:hover{color:#fff}
 .langs button.on{background:var(--red);border-color:var(--red);color:#fff}
 .langs button:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+
+/* galeri baris (proyek foto baru) */
+.rows{display:grid;gap:.6rem;margin-top:1.1rem}
+.row{display:flex;gap:.6rem}
+.row figure{margin:0;flex:var(--a) 1 0;min-width:0}
+.row img{display:block;width:100%;height:auto;border-radius:.9rem;cursor:zoom-in;transition:transform .25s}
+.row img:hover{transform:scale(1.015)}
+@media(max-width:759px){
+.row{flex-direction:column}
+.row figure{flex:none;width:100%}
+.row.m3{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
+.row.m3 figure:first-child{grid-column:1/-1}
+.row.m3 figure:not(:first-child){aspect-ratio:var(--r,4/5)}
+.row.m3 figure:not(:first-child) img{height:100%;object-fit:cover;object-position:var(--fp,50% 30%)}
+}
+@media(prefers-reduced-motion:reduce){.row img{transition:none}}
